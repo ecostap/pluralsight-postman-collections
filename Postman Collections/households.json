@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "2af0c7f4-20a4-44e5-bcfc-0f27db343248",
+		"name": "Postman Fundamentals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/books/28",
+			"_postman_id": "18f4b315-5993-4bf9-bc3f-19c2cd036763",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin",
+						"username": "admin"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "G-TOKEN",
+						"value": "ROM831ESV",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"You Are What You Love: TheSpiritual Power of Habit\",\r\n    \"author\": \"James K.A. Smith\",\r\n    \"isbn\" : \"158743340X\",\r\n    \"releaseDate\": \"2016-03-05\"\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/28",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"28"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "wast",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/books",
+			"_postman_id": "eb96639a-2b37-49ff-8cc2-242cee9f5dda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "G-TOKEN",
+						"value": "ROM831ESV",
+						"type": "text"
+					}
+				],
+				"url": "{{host}}/books"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books",
+			"_postman_id": "ee66cf82-21cf-40ea-a22d-12212b5cbeac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:3000"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:3000/ui"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "g-token",
+						"value": "ROM831ESV"
+					},
+					{
+						"key": "postman-token",
+						"value": "94e03697-36ba-33d0-bf88-eae6aeb4380e"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"O Memorial do Convento\",\"author\":\"José Saramago\",\"isbn\":\"972-21-0026-2\",\"releaseDate\":\"1982-10-01\"}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": "http://localhost:3000/books"
+			},
+			"response": []
+		}
+	]
+}
